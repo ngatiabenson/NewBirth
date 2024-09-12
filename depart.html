@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewBirth Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="javascript.js">
+    <script src="jquery.js"></script>
+
+<style type="text/css">
+
+    .img-responsive {
+      
+      height: 250px !important;
+    }  
+    
+    .item-details {
+      width: 100% !important;
+      height: 150px !important;  
+    }
+    body{
+        background-color: yellow;
+    }
+</style>
+<script>
+        function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</head>
+<body>
+    <header>
+        <br>
+        <nav>
+ <! --phone navbar -->
+            <div class="phone">
+                <img src="images/logo 1 (1).jpeg" alt="logo">
+                <!-- <div class="menuHamburger">&#9776;</div> --> 
+                <span onclick="openNav()" style="cursor: pointer;  padding: 5px; margin-left: 100px;">&#9776;</span>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="About.html">ABOUT</a>
+                    <a href="depart.html">DEPARTMENTS</a>
+                    <a href="portal.html">PORTAL</a>
+                    <a href="Gallery.html">GALLERY</a>
+                    <a href="index.html">CONTACT</a>
+                  </div>
+            </div>
+             
+ 
+<! --desktop navigation -->
+            <div class="dropdown">
+                <div class="logos">
+                    <img src="images/logo 1 (1).jpeg" alt="logo">
+                </div>
+                <div class="emails">
+                    <img src="images/mail.png" alt="mail">
+                    <p> <span>Email Us</span><br><a href="https://mail.google.com/mail/u/0/">254engineerben@gmail.com</a></p>
+                </div>
+                <div class="emails">
+                    <img src="images/telephone.png" alt="phone">
+                    <p><span>Call Us</span> <br>+254 727 156404</p>
+                </div>
+            </div>
+
+            <div class="email">
+                <img src="images/mail.png" alt="mail">
+                <p> <span>Email Us</span><br><a href="https://mail.google.com/mail/u/0/">254engineerben@gmail.com</a></p>
+            </div>    
+            <div class="logo">
+                <img src="images/logo 1 (1).jpeg" alt="logo">
+            </div>
+            <div class="email">
+                <img src="images/telephone.png" alt="phone">
+                <p><span>Call Us</span> <br>+254 727 156404</p>
+            </div>
+        </nav>
+            <li>
+
+                <a href="index.html">HOME</a>
+                <a href="About.html">ABOUT</a>
+                <a href="depart.html">DEPARTMENTS</a>
+                <a href="portal.html">PORTAL</a>
+                <a href="Gallery.html">GALLERY</a>
+                
+            </li> 
+    </header>
+ 
+    <section id="Department">
+        <div class="grid-containers">
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Hospitality &amp; Tourism</h2>
+              </div>
+          </div>
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Business Studies</h2>
+              </div>
+          </div>
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Fashion &amp; Design</h2>
+              </div>
+          </div>
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Engineering</h2>
+              </div>
+          </div>
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Short Courses</h2>
+              </div>
+          </div>
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Nursing</h2>
+              </div>
+          </div>
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Hair Dressing &amp; Beauty Therapy</h2>
+              </div>
+          </div>
+          <div class="grid-items">
+              <div class="cards">
+                  <img src="images/logo 1 (1).jpeg">
+                  <h2>Information Computer Technology </h2>
+              </div>
+          </div>
+  
+        </div>
+  </section>
+      <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const next = document.getElementById("next");
+            const prev = document.getElementById("prev");
+            const image = document.querySelector(".image-container");
+    
+            const first_card_clone = image.children[0].cloneNode(true);
+            const last_card_clone =
+              image.children[image.children.length - 1].cloneNode(true);
+    
+            image.insertBefore(last_card_clone, image.children[0]);
+            image.appendChild(first_card_clone);
+    
+            let current_card = 1;
+            image.style.transition = "none";
+            image.style.transform = `translate(-${current_card * 350}px)`;
+    
+            next.addEventListener("click", () => {
+              if (current_card < image.children.length - 1) {
+                current_card++;
+                image.style.transition = "transform 0.5s";
+                image.style.transform = `translate(-${current_card * 350}px)`;
+    
+                if (current_card === image.children.length - 1) {
+                  setTimeout(() => {
+                    image.style.transition = "none";
+                    image.style.transform = "translate(-350px)";
+                    current_card = 1;
+                  }, 500);
+                }
+              }
+            });
+    
+            prev.addEventListener("click", () => {
+              if (current_card > 0) {
+                current_card--;
+                image.style.transition = "transform 0.5s";
+                image.style.transform = `translate(-${current_card * 350}px)`;
+    
+                if (current_card === 0) {
+                  setTimeout(() => {
+                    image.style.transition = "none";
+                    image.style.transform = `translate(-${
+                      (image.children.length - 2) * 350
+                    }px)`;
+                    current_card = image.children.length - 2;
+                  }, 500);
+                }
+              }
+            });
+          });
+        </script>
+
+<!--FOOTER-->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <p><strong>Contact Us:</strong></p>
+            <p>Phone: +254 727 156404</p>
+            <p>Email: <a href="mailto:254engineerben@gmail.com">254engineerben@gmail.com</a></p>
+            <p>Location: Machakos Town, Nyahururu, Kisumu</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 NewBirth Technical Institute. Powered by Activus.</p>
+    </div>
+  </footer>
+  
+  <style>
+    /* Footer Styles */
+    .footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+    }
+  
+    .footer-content {
+        margin-bottom: 10px;
+    }
+  
+    .contact-info p {
+        margin: 5px 0;
+    }
+  
+    .contact-info a {
+        color: #ecf0f1;
+        text-decoration: none;
+    }
+  
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+  
+    .footer-bottom {
+        border-top: 1px solid #34495e;
+        padding-top: 10px;
+        font-size: 0.8em;
+    }
+  
+    @media (max-width: 768px) {
+        .footer {
+            padding: 15px;
+        }
+  
+        .footer-content p {
+            font-size: 0.9em;
+        }
+    }
+  </style>
+  
+ 
+</body>
+
+</html>

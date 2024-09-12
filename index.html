@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewBirth Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="javascript.js">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<style type="text/css">
+
+    .img-responsive {
+      
+      height: 250px !important;
+    }  
+    
+    .item-details {
+      width: 100% !important;
+      height: 150px !important;  
+    }
+</style>
+<script>
+        function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</head>
+<body>
+    <header>
+        <br>
+        <nav>
+ <! --phone navbar -->
+            <div class="phone">
+                <img src="images/logo 1 (1).jpeg" alt="logo">
+                <!-- <div class="menuHamburger">&#9776;</div> --> 
+                <span onclick="openNav()" style="cursor: pointer;  padding: 5px; margin-left: 100px;">&#9776;</span>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="About.html">ABOUT</a>
+                    <a href="depart.html">DEPARTMENTS</a>
+                    <a href="portal.html">PORTAL</a>
+                    <a href="Gallery.html">GALLERY</a>
+                    <a href="index.html">CONTACT</a>
+                  </div>
+            </div>
+             
+ 
+<! --desktop navigation -->
+            <div class="dropdown">
+                <div class="logos">
+                    <img src="images/logo 1 (1).jpeg" alt="logo">
+                </div>
+                <div class="emails">
+                    <img src="images/mail.png" alt="mail">
+                    <p> <span>Email Us</span><br><a href="https://mail.google.com/mail/u/0/">254engineerben@gmail.com</a></p>
+                </div>
+                <div class="emails">
+                    <img src="images/telephone.png" alt="phone">
+                    <p><span>Call Us</span> <br>+254 727 156404</p>
+                </div>
+            </div>
+
+            <div class="email">
+                <img src="images/mail.png" alt="mail">
+                <p> <span>Email Us</span><br><a href="https://mail.google.com/mail/u/0/">254engineerben@gmail.com</a></p>
+            </div>    
+            <div class="logo">
+                <img src="images/logo 1 (1).jpeg" alt="logo">
+            </div>
+            <div class="email">
+                <img src="images/telephone.png" alt="phone">
+                <p><span>Call Us</span> <br>+254 727 156404</p>
+            </div>
+        </nav>
+            <li>
+
+                <a href="index.html">HOME</a>
+                <a href="About.html">ABOUT</a>
+                <a href="depart.html">DEPARTMENTS</a>
+                <a href="portal.html">PORTAL</a>
+                <a href="Gallery.html">GALLERY</a>
+                
+            </li> 
+    </header>
+
+    <section id="landing">
+        <div class="landing">
+            <H1>WELCOME TO <br> NEWBIRTH TECHNICAL & TRAINING INSTITUTE</H1>
+        </div>
+    </section>
+
+
+<Section id="ABOUT">
+      <center><h2>Our mission statement</h2>
+      <p>To empower students through innovative, hands-on vocational training and quality education, equipping them with the skills, knowledge, and values needed to excel in a competitive global market. We are committed to fostering excellence in every learner by providing a dynamic learning environment where quality meets passion and purpose.</p></center>
+      
+      <center><h2>Our vision</h2>
+      <p>To be a premier institution for vocational training and education, shaping the next generation of skilled professionals who drive progress and innovation in diverse industries, with a commitment to quality, integrity, and excellence.</p></center>
+      
+
+      <center><h2>Partners with</h2>
+  <div class="wrapper">
+     <div class="grid">
+        <img src="images/kasneb.png" alt="">
+        <img src="images/nita.png" alt="">
+        <img src="images/tvet.png" alt="">
+      </div>
+  </div></center>
+        
+</Section>   
+      
+
+<!--DEPARTMENT SECTIOON-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewBirth Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <style type="text/css">
+        .img-responsive {
+            height: 250px !important;
+        }
+
+        .item-details {
+            width: 100% !important;
+            height: 150px !important;
+        }
+
+        .Department {
+            position: relative;
+            height: 80vh; /* Full height of viewport */
+            /*background-color: #f0f0f0;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .Department h1 {
+            position: absolute;
+            top: 1%; /* Centered title */
+            width: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            color: #437cb7;
+        }
+
+        .viewport {
+            width: 600px; /* Matching the card size */
+            height: 400px;
+            /*overflow: hidden;*/  /*Ensures only one card is visible */
+            border-radius: 8px;
+  
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(220, 220, 47);
+            border: 5px solidrgb(220, 220, 47);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            transition: transform 0.5s ease-in-out;
+            
+        }
+
+        /* Styling for buttons */
+        #next, #prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            background-color: rgb(220, 220, 47);
+            color: #437cb7;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            z-index: 10;
+        }
+
+        #next {
+            right: -1px; /* Next button on the right side */
+        }
+
+        #prev {
+            left: -1px; /* Prev button on the left side */
+        }
+
+        .card {
+            width: 350px;
+            height: 400px;
+            background-color: rgb(53, 53, 232);
+            text-align: center;
+            font-size: 1.5em;
+            border: 5px solid rgb(220, 220, 47);
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        .card img {
+            padding-top: 10px;
+        }
+
+        .card h2 {
+            color: rgb(220, 220, 47);
+            margin: 14px 30px 40px;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const next = document.getElementById("next");
+            const prev = document.getElementById("prev");
+            const image = document.querySelector(".image-container");
+
+            const firstCardClone = image.children[0].cloneNode(true);
+            const lastCardClone = image.children[image.children.length - 1].cloneNode(true);
+
+            image.insertBefore(lastCardClone, image.children[0]);
+            image.appendChild(firstCardClone);
+
+            let currentCard = 1;
+            const cardWidth = 350; // Set card width for calculations
+
+            image.style.transform = `translateX(-${currentCard * cardWidth}px)`;
+
+            next.addEventListener("click", () => {
+                if (currentCard < image.children.length - 1) {
+                    currentCard++;
+                    image.style.transition = "transform 0.5s";
+                    image.style.transform = `translateX(-${currentCard * cardWidth}px)`;
+
+                    if (currentCard === image.children.length - 1) {
+                        setTimeout(() => {
+                            image.style.transition = "none";
+                            image.style.transform = `translateX(-${cardWidth}px)`;
+                            currentCard = 1;
+                        }, 500);
+                    }
+                }
+            });
+
+            prev.addEventListener("click", () => {
+                if (currentCard > 0) {
+                    currentCard--;
+                    image.style.transition = "transform 0.5s";
+                    image.style.transform = `translateX(-${currentCard * cardWidth}px)`;
+
+                    if (currentCard === 0) {
+                        setTimeout(() => {
+                            image.style.transition = "none";
+                            image.style.transform = `translateX(-${
+                              (image.children.length - 2) * cardWidth
+                            }px)`;
+                            currentCard = image.children.length - 2;
+                        }, 500);
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Department Section -->
+    <div class="Department">
+        <h1>Our Departments</h1> <!-- Centered H1 -->
+        
+        <button id="prev">Prev</button> <!-- Left-side button -->
+
+        <div class="viewport">
+            <div class="image-container">
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>Business Studies</h2>
+                </div>
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>Hospitality &amp; Tourism</h2>
+                </div>
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>Fashion &amp; Design</h2>
+                </div>
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>Engineering</h2>
+                </div>
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>Short Courses</h2>
+                </div>
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>ICT</h2>
+                </div>
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>Hair Dressing &amp; Beauty Therapy</h2>
+                </div>
+                <div class="card">
+                    <img src="images/logo 1 (1).jpeg">
+                    <h2>Nursing</h2>
+                </div>
+            </div>
+        </div>
+
+        <button id="next">Next</button> <!-- Right-side button -->
+    </div>
+</body>
+</html>
+
+
+<!--FOOTER-->
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+      <div class="contact-info">
+          <p><strong>Contact Us:</strong></p>
+          <p>Phone: +254 727 156404</p>
+          <p>Email: <a href="mailto:254engineerben@gmail.com">254engineerben@gmail.com</a></p>
+          <p>Location: Machakos Town, Nyahururu, Kisumu</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 NewBirth Technical Institute. Powered by Activus.</p>
+  </div>
+</footer>
+
+<style>
+  /* Footer Styles */
+  .footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .footer-content {
+      margin-bottom: 10px;
+  }
+
+  .contact-info p {
+      margin: 5px 0;
+  }
+
+  .contact-info a {
+      color: #ecf0f1;
+      text-decoration: none;
+  }
+
+  .contact-info a:hover {
+      text-decoration: underline;
+  }
+
+  .footer-bottom {
+      border-top: 1px solid #34495e;
+      padding-top: 10px;
+      font-size: 0.8em;
+  }
+
+  @media (max-width: 768px) {
+      .footer {
+          padding: 15px;
+      }
+
+      .footer-content p {
+          font-size: 0.9em;
+      }
+  }
+</style>
+
+
+
+
+
+
+
+</body>
+</html>

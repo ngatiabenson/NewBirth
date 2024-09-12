@@ -1,0 +1,373 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*navbar*/
+header{
+    background-color:  rgb(220, 220, 47);
+}
+nav{
+    background-color:rgb(53, 53, 232) ;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: rgb(220, 220, 47);
+}
+nav  img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.email{
+    display: flex;
+    float: left;
+}
+.email p{
+    margin-left: 30px;
+    color: rgb(220, 220, 47);
+}
+.email a{
+    color: rgb(220, 220, 47);
+}
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: #437cb7;
+}
+@media screen and (min-width: 930px){
+    .dropdown{
+        display: none;
+    }
+}
+@media screen and (max-width: 930px) {
+    .email{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .nav, .dropdown{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logos img {
+        width: 80px;
+        height: 80px;
+        margin-left:3px;
+        margin-right: 20px;
+    }
+    .emails{
+        display: flex;
+        float: left;
+    }
+    .emails p{
+        margin-left: 30px;
+        color: rgb(220, 220, 47);
+    }
+    .emails a{
+        color: rgb(220, 220, 47);
+    }
+ }
+ @media screen and (min-width: 700px){
+    .phone{
+        display: none;
+    }
+    .menuHamburger,.close{
+        display: none;
+    }
+    .sidebarMenu a{
+        display: none;
+    }
+ }
+
+@media screen and (max-width: 700px) {
+    .email{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .nav, .dropdown{
+        display: none;
+    }
+    .emails{
+        display: none;
+    }
+    .phone img{
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        float: left;
+    } 
+    .phone{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+/*dropdown*/
+
+/*hide the links navigation screeen size*/
+header li{
+    display: none;
+}
+.logos img{
+    margin-bottom: 300px;
+}
+}
+				/* The side navigation menu */
+                .sidenav {
+                    height: 100%; /* 100% Full-height */
+                    width: 0; /* 0 width - change this with JavaScript */
+                    position: fixed; /* Stay in place */
+                    z-index: 1; /* Stay on top */
+                    top: 0;
+                    background-color: rgb(53, 53, 232) ; /* Blue*/
+                    overflow-x: hidden; /* Disable horizontal scroll */
+                    padding-top: 60px; /* Place content 60px from the top */
+                    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+                }
+    
+                /* The navigation menu links */
+                .sidenav a {
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:  rgb(220, 220, 47);
+                    display: block;
+                    transition: 0.3s
+                }
+    
+                /* When you mouse over the navigation links, change their color */
+                .sidenav a:hover, .offcanvas a:focus{
+                    color:  rgb(220, 220, 47);
+                }
+    
+                /* Position and style the close button (top right corner) */
+                .sidenav .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 36px;
+                    margin-left: 50px;
+                }
+                .sidenav {
+                    right: 0;
+                }
+                @media screen and (max-height: 450px) {
+                    .sidenav {padding-top: 15px;}
+                    .sidenav a {font-size: 18px;}
+                }
+                .sidenav {
+                    right: 0;
+                }
+ /*landing page*/
+ .landing{  
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/grad.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out; 
+ }
+ @keyframes change{
+    0%
+    {
+        background-image: url(images/grad.jpg);
+    }
+    20%
+    {
+        background-image: url(images/14.jpg);
+    }
+    40%
+    {
+        background-image: url(images/17.jpg);
+    }
+    60%
+    {
+        background-image: url(images/1.jpg);
+    }
+    80%
+    {
+        background-image: url(images/7.jpg);
+    }
+    100%
+    {
+        background-image: url(images/coming\ soon.jpg);
+    }
+ }
+
+
+ /*     ABOUT SECTION */
+ #ABOUT{
+  /*background-color: #437cb7 ;*/
+  margin: 10px;
+ }
+ h4 {
+  text-decoration: underline;
+}
+.grid img{
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+/* ABOUT WEBPAGE CSS */
+h1 {
+  font-family: courier new;
+  color: white;
+}
+body {
+  color: white;
+  font-family: Calibri;
+  background-image: url("http://www.sitea.se/wp-content/uploads/2017/06/Blue-Wallpaper-Store-Blue-gradient-wallpaper.jpg");
+   background-size: cover;
+  background-position: center;
+}
+h2 {
+    font-family: Courier New;
+}
+h4 {
+  text-decoration: underline;
+}
+p { 
+  margin-top: 20px; 
+}
+.image-example img {
+  float: left;
+  /*background-color: #555555;
+  width: 200px;
+  height: 200px;*/
+  align-items:center;
+  color: #FFFFFF;
+  padding-top: 20px;
+  margin: 5px 20px 10px 0px;
+  Border-radius: 50px;
+}
+
+  
+
+            /*DEPARTMENT SECTION HOME PAGE CSS*/
+  .Department{
+    background-color: rgb(220, 220, 47);    
+    margin: auto;
+    width: 50%;
+  }
+  .viewport{
+   margin: auto;
+   width: 50%;
+  }
+  .grid-item, .card h2{
+    color:  yellow;
+    display: block;
+    font-size: large;
+  }
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: rgb(53, 53, 232);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50px;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    width: 50%;
+   
+  }
+  .card img{
+    border-radius: 50px;
+  }
+
+
+
+                    /*Gallery layout & departments webpage*/
+                   
+                    .grid-items {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      
+                        background-color: rgb(53, 53, 232);
+                        border-radius: 8px;
+                        transition: transform 0.3s ease-in-out;
+                        border-radius: 50px;
+                      
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                       
+                      }
+                      .grid-items, .cards h2{
+                        color:  yellow;
+                        display: block;
+                        font-size: medium;
+                      }
+                       .cards img{
+                        border-radius: 50px;
+                      }
+                      
+                      .grid-items:hover {
+                        filter: opacity(0.9);
+                        transform: scale(1.04);
+                      }
+                      
+                      .grid-containers {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        grid-auto-rows: minmax(300px, auto);
+                        gap: 10px;
+                        padding: 20px;
+                        grid-auto-flow: dense;
+                      }
+                      .cards {
+                          width: 200px;
+                          height: 300px;
+                          padding: 35px;
+                          margin-left: 6px;
+                          border-radius: 8px;
+                          display: flex;
+                          flex-direction: column;
+                          float: inline-start;
+                          background-color: rgb(53, 53, 232);
+                          border-radius: 50px;
+                            border: 1px solid rgb(220, 220, 47);
+                      }
+                      
+                      
+                      @media (min-width: 600px) {
+                        .wide {
+                          grid-column: span 2;
+                        }
+                      
+                        .tall {
+                          grid-row: span 2;
+                        }
+                      } 
